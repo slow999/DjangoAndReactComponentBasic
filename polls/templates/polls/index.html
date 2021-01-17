@@ -34,7 +34,7 @@
                   Fill in neccessary info and submit.
                 </p>
                 {% csrf_token %}
-                <div id="registration_form"></div>
+                <div id="like_button_container"></div>
               </div>
             </div>
           </div>
@@ -46,6 +46,5 @@
 {% endblock %}
 
 {% block extra_js %}
-  <script src="{% static 'dist/js/csrftoken.js' %}" type="text/babel"></script>
-  <script src="{% static 'dist/js/registration_form.js' %}" type="text/babel"></script>
+  <script src="{% static '/polls/like_button.js' %}" type="text/babel"></script>
 {% endblock %}
